@@ -1,4 +1,4 @@
-﻿// 13:00 Uhr
+﻿// 13:06 Uhr
 
 
  CreateTable V[NOTIFICATION] NOTIFICAT NOTIFDATE 
