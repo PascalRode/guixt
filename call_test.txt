@@ -1,4 +1,6 @@
-﻿ CreateTable V[NOTIFICATION] NOTIFICAT NOTIFDATE 
+﻿// New !! 
+
+ CreateTable V[NOTIFICATION] NOTIFICAT NOTIFDATE 
     Set V[COMPLETE] " " 
     Set V[NOTIFICATION_DATE] "&V[today-30_m/d/y]" 
     SeT V[CUSTOMERNO] "K1032"
