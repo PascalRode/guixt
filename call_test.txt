@@ -1,0 +1,21 @@
+﻿ CreateTable V[NOTIFICATION] NOTIFICAT NOTIFDATE 
+    Set V[COMPLETE] " " 
+    Set V[NOTIFICATION_DATE] "&V[today-30_m/d/y]" 
+    SeT V[CUSTOMERNO] "K1032"
+    CreateStructure  V[RETURN]  MESSAGE TYPE CODE
+
+    // Get all open service notifications for the customer of last 30 days
+
+       // Call "BAPI_SERVICENOTIFICAT_GETLIST" export.COMPLETE="COMPLETE" _  
+       // export.CUSTOMERNO="CUSTOMERNO" _ 
+       // export.NOTIFICATION_DATE="NOTIFICATION_DATE"  _ 
+       // import.RETURN="RETURN" _ 
+       // import.NOTIFICATION="NOTIFICATION"
+      
+       Call "BAPI_SERVICENOTIFICAT_GETLIST" export.CUSTOMERNO="CUSTOMERNO" _ 
+       export.NOTIFICATION_DATE="NOTIFICATION_DATE"  export.COMPLETE="COMPLETE" _ 
+       import.RETURN="RETURN" _ 
+       import.NOTIFICATION="NOTIFICATION"
+      
+    
+    Statusmessage addstring="&V[RETURN.TYPE]:  &V[RETURN.MESSAGE]"
