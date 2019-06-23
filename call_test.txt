@@ -1,5 +1,6 @@
 ﻿// 22:53 Uhr
 
+// NEU !! ! 
 
  CreateTable V[NOTIFICATION] NOTIFICAT NOTIFDATE 
     Set V[COMPLETE] " " 
