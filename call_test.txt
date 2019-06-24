@@ -2,6 +2,8 @@
 
 // NEU !! ! 
 
+// noch neuer 
+
  CreateTable V[NOTIFICATION] NOTIFICAT NOTIFDATE 
     Set V[COMPLETE] " " 
     Set V[NOTIFICATION_DATE] "&V[today-30_m/d/y]" 
